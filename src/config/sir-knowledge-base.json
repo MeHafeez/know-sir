@@ -1,0 +1,145 @@
+{
+  "_meta": {
+    "source": "Election Commission of India — Official Resources",
+    "purpose": "RAG knowledge base for AI assistant — only official ECI information",
+    "note": "All entries must cite official ECI sources. AI must never answer beyond this knowledge base."
+  },
+  "documents": [
+    {
+      "id": "kb001",
+      "title": "What is Special Intensive Revision (SIR)?",
+      "content": "Special Intensive Revision (SIR) is a comprehensive exercise conducted by the Election Commission of India (ECI) to ensure the accuracy of electoral rolls. During SIR, Booth Level Officers (BLOs) visit every household in their assigned booths to verify voter details, identify citizens not yet enrolled, and update the electoral roll. The objective is to make the voter list complete, correct, and current. It covers addition of new voters, deletion of dead/shifted voters, and correction of existing entries.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://www.eci.gov.in",
+      "category": "overview",
+      "tags": ["SIR", "overview", "what is", "explanation"]
+    },
+    {
+      "id": "kb002",
+      "title": "Who conducts SIR and what is a BLO?",
+      "content": "A Booth Level Officer (BLO) is a government official appointed by the Electoral Registration Officer (ERO) for each polling booth. During SIR, the BLO visits every household in their assigned area to verify voter details. Citizens should cooperate with the BLO during their visit and provide accurate information. If a BLO has not visited, citizens can contact their ERO office or call Voter Helpline 1950.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://voters.eci.gov.in/",
+      "category": "process",
+      "tags": ["BLO", "booth level officer", "who", "official"]
+    },
+    {
+      "id": "kb003",
+      "title": "Form 6 — New Voter Registration",
+      "content": "Form 6 is used for inclusion of name in the electoral roll for the first time. It is applicable to: (1) Citizens applying for first-time registration as a voter, (2) Citizens whose names were deleted and wish to re-enroll, (3) Citizens who have shifted to a new constituency. Form 6 is available online at voters.eci.gov.in and can also be submitted offline to the BLO or ERO office. Documents required include proof of age, proof of address, and a recent photograph.",
+      "source": "Election Commission of India — Voter Services Portal",
+      "sourceUrl": "https://voters.eci.gov.in/",
+      "category": "forms",
+      "tags": ["Form 6", "new voter", "registration", "first time", "form"]
+    },
+    {
+      "id": "kb004",
+      "title": "Form 6A — NRI Voter Registration",
+      "content": "Form 6A is used by Non-Resident Indians (NRIs) for inclusion in the electoral roll as an overseas voter. An NRI who is a citizen of India and has not acquired citizenship of any other country is entitled to be registered. The NRI must have their ordinary residence address in India mentioned in the form. A valid Indian passport is required. Form 6A must be submitted online at voters.eci.gov.in.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://voters.eci.gov.in/",
+      "category": "forms",
+      "tags": ["Form 6A", "NRI", "overseas voter", "abroad", "form"]
+    },
+    {
+      "id": "kb005",
+      "title": "Form 7 — Deletion / Objection",
+      "content": "Form 7 is used to object to the inclusion of a name in the electoral roll or to request deletion of a name (e.g., duplicate entry, deceased voter, or person who has permanently shifted out). Any voter can raise an objection using Form 7. The form is available at voters.eci.gov.in. The ERO will investigate and decide after giving the concerned person an opportunity to be heard.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://voters.eci.gov.in/",
+      "category": "forms",
+      "tags": ["Form 7", "deletion", "objection", "duplicate", "deceased", "form"]
+    },
+    {
+      "id": "kb006",
+      "title": "Form 8 — Correction and Transposition",
+      "content": "Form 8 is used for: (1) Correction of entries in the electoral roll (name spelling, date of birth, photo, EPIC number etc.), (2) Transposition of entry within the same constituency when a voter shifts address within the same constituency, (3) Marking of Persons with Disabilities (PwD) in the electoral roll. For address change to a different constituency, Form 6 must be used instead.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://voters.eci.gov.in/",
+      "category": "forms",
+      "tags": ["Form 8", "correction", "transposition", "address change", "PwD", "form"]
+    },
+    {
+      "id": "kb007",
+      "title": "Documents for Voter Registration — Proof of Identity",
+      "content": "For proof of identity during voter registration, ECI accepts any ONE of: Aadhaar Card, PAN Card, Passport, Driving Licence, Bank/Post Office Passbook with photograph, Student ID card (from recognised institution), Government/PSU Employee ID card, MNREGA Job Card, or other documents as specified by ECI. Citizens should check the official ECI website for the most current and complete list.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://www.eci.gov.in",
+      "category": "documents",
+      "tags": ["identity proof", "documents", "Aadhaar", "PAN", "passport", "ID"]
+    },
+    {
+      "id": "kb008",
+      "title": "Documents for Voter Registration — Proof of Address",
+      "content": "For proof of ordinary residence/address, ECI accepts any ONE of: Aadhaar Card (with current address), Bank or Post Office statement/passbook, Utility bills (electricity/gas/water/telephone — recent, as per ECI guidelines), Ration Card, Registered rent agreement, or official correspondence addressed to the applicant at the current address. Citizens should verify the current list on the official ECI portal as requirements may be updated.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://www.eci.gov.in",
+      "category": "documents",
+      "tags": ["address proof", "documents", "Aadhaar", "utility bill", "ration card", "residence"]
+    },
+    {
+      "id": "kb009",
+      "title": "Voter Helpline 1950",
+      "content": "The National Voter Helpline number is 1950. Citizens can call this number for assistance with voter registration, finding their polling booth, tracking application status, and general voter queries. The helpline is operated by the Election Commission of India. Availability may vary by state and time. Citizens can also use the Voter Helpline App or visit voters.eci.gov.in for 24/7 online services.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://www.eci.gov.in",
+      "category": "helpline",
+      "tags": ["1950", "helpline", "contact", "phone", "support"]
+    },
+    {
+      "id": "kb010",
+      "title": "How to Check if Your Name is in the Voter List",
+      "content": "Citizens can check their voter registration status at electoralsearch.eci.gov.in. Search options include: by name and address details, or by EPIC (Voter ID) number. The portal shows the voter's entry in the electoral roll, part number, serial number, and polling station details. If the name is not found, the citizen should apply using Form 6. For corrections, Form 8 should be used.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://electoralsearch.eci.gov.in",
+      "category": "process",
+      "tags": ["check name", "voter list", "electoral roll", "EPIC", "voter ID", "search"]
+    },
+    {
+      "id": "kb011",
+      "title": "e-EPIC — Digital Voter ID Card",
+      "content": "e-EPIC (Electronic Electoral Photo Identity Card) is the digital version of the Voter ID card in PDF format. Citizens can download their e-EPIC from voters.eci.gov.in or the Voter Helpline App using their registered mobile number or EPIC number. The e-EPIC is a valid identity document and can be used as proof of identity. It is issued free of cost.",
+      "source": "Election Commission of India — Voter Services Portal",
+      "sourceUrl": "https://voters.eci.gov.in/",
+      "category": "services",
+      "tags": ["e-EPIC", "digital voter ID", "download", "voter card", "PDF"]
+    },
+    {
+      "id": "kb012",
+      "title": "Aadhaar — Linking with Voter ID",
+      "content": "The ECI has been working on voluntary linking of Aadhaar with electoral roll entries to eliminate duplicate registrations and improve roll accuracy. This is voluntary and not mandatory for voter registration. Citizens who wish to link their Aadhaar with their voter ID can do so through voters.eci.gov.in or the Voter Helpline App. Refusal to link Aadhaar does not disqualify a person from being a voter.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://voters.eci.gov.in/",
+      "category": "services",
+      "tags": ["Aadhaar", "linking", "voter ID", "UIDAI", "voluntary"]
+    },
+    {
+      "id": "kb013",
+      "title": "SIR Process — Timeline and Phases",
+      "content": "The SIR process typically involves: (1) ECI announces the SIR schedule for a state/UT, (2) BLOs conduct door-to-door survey in their assigned booths, (3) Citizens submit forms for new registration, corrections, or deletions, (4) Draft electoral rolls are published for public inspection, (5) Claims and objections period opens for citizens to review and raise corrections, (6) After processing all claims, the final electoral roll is published. Specific dates vary by state and are announced officially by the ECI.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://www.eci.gov.in",
+      "category": "process",
+      "tags": ["SIR process", "timeline", "phases", "BLO survey", "draft roll", "final roll"]
+    },
+    {
+      "id": "kb014",
+      "title": "Persons with Disabilities (PwD) — Voter Services",
+      "content": "The Election Commission of India provides special provisions for Persons with Disabilities (PwD): (1) PwD marking can be requested via Form 8, (2) Accessibility facilities are provided at polling booths, (3) BLOs can conduct home visits for voters who are unable to travel, (4) Braille EVMs and ramps are provided at polling stations. PwD voters can contact their ERO or call 1950 for special assistance.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://www.eci.gov.in",
+      "category": "accessibility",
+      "tags": ["PwD", "disability", "accessibility", "Form 8", "special provisions", "wheelchair"]
+    },
+    {
+      "id": "kb015",
+      "title": "What happens if my name is deleted from the voter list?",
+      "content": "If a voter's name has been deleted from the electoral roll, they can apply for re-inclusion using Form 6. The deletion may happen due to reasons like the voter having shifted, being reported as deceased, or duplicate removal. To check if the name has been deleted, visit electoralsearch.eci.gov.in. If deleted erroneously, submit Form 6 with supporting documents to the ERO or online at voters.eci.gov.in.",
+      "source": "Election Commission of India",
+      "sourceUrl": "https://voters.eci.gov.in/",
+      "category": "process",
+      "tags": ["deleted", "name removed", "re-enrollment", "Form 6", "electoral roll"]
+    }
+  ],
+  "systemPrompt": "You are a helpful citizen assistant for the SIR Voter Verification Help Portal. You ONLY answer questions based on the official Election Commission of India knowledge base provided to you. You must NEVER invent rules, eligibility conditions, document requirements, or procedures. If information is not in the knowledge base, respond with: 'This information could not be verified from the official Election Commission resources provided to this system. Please contact Voter Helpline 1950 or visit www.eci.gov.in for accurate information.' Always provide the source citation for every answer. Respond in the user's language if specified. Be clear, simple, and helpful to citizens who may have low literacy or limited internet experience."
+}

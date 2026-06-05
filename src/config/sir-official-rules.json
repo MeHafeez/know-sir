@@ -1,0 +1,172 @@
+{
+  "_meta": {
+    "databaseVersion": "1.0.0",
+    "purpose": "Centralized official rule database — ALL rules must cite official ECI sources",
+    "legalNotice": "This database contains rules sourced exclusively from publicly available Election Commission of India resources. Every rule entry must carry a sourceUrl, sourceDocument, and lastVerified timestamp. Rules without verified official sources must NOT be displayed to citizens.",
+    "misinformationPolicy": "If any rule cannot be traced to an official ECI source, it must be marked as verified:false and must display the unverified notice to citizens.",
+    "disclaimer": "This platform is a public awareness initiative. Information is sourced from publicly available Election Commission resources. Users should verify critical information through official Election Commission channels before taking action. This platform does not determine eligibility, citizenship, or legal status."
+  },
+
+  "citizenCategories": [
+    {
+      "ruleId": "citizen-cat-A",
+      "categoryCode": "A",
+      "title": "Born before 01 July 1987",
+      "subtitle": "Citizenship by Birth — Before Amendment",
+      "icon": "Elderly",
+      "color": "blue",
+      "verified": true,
+      "source": "Citizenship Act, 1955 — Section 3(1)(a) as amended by Citizenship (Amendment) Act, 1986",
+      "sourceUrl": "https://www.mha.gov.in/sites/default/files/Citizenship_Act_1955.pdf",
+      "sourceDocument": "Citizenship Act, 1955 — Ministry of Home Affairs",
+      "officialReferenceBody": "Ministry of Home Affairs, Government of India",
+      "relevanceNote": "Persons born in India before 01 July 1987 are citizens of India by birth, irrespective of the nationality of parents. For SIR voter verification in states conducting NRC-linked rolls, this category determines required documentary evidence.",
+      "applicabilityNote": "This category is specifically relevant to electoral roll verification exercises that include citizenship documentation. For standard ECI voter registration, eligibility is determined by being a citizen of India aged 18+ and ordinarily resident. Verify with your local ERO for state-specific requirements.",
+      "voterRegistrationNote": "For standard voter registration: Any citizen of India aged 18 years or above who is ordinarily resident in the constituency is eligible. Visit voters.eci.gov.in.",
+      "lastVerified": "2025-01-01",
+      "eciBriefing": "https://www.eci.gov.in",
+      "mayRequireDocuments": ["identity", "birthPlace"],
+      "suggestedForms": ["form6"],
+      "displayWarning": null
+    },
+    {
+      "ruleId": "citizen-cat-B",
+      "categoryCode": "B",
+      "title": "Born between 01 July 1987 and 02 December 2004",
+      "subtitle": "Citizenship by Birth — Post-1986 Amendment",
+      "icon": "Person",
+      "color": "green",
+      "verified": true,
+      "source": "Citizenship (Amendment) Act, 1986 — Section 3(1)(b) and Citizenship (Amendment) Act, 2003",
+      "sourceUrl": "https://www.mha.gov.in/sites/default/files/Citizenship_Act_1955.pdf",
+      "sourceDocument": "Citizenship Act, 1955 (as amended up to 2004) — Ministry of Home Affairs",
+      "officialReferenceBody": "Ministry of Home Affairs, Government of India",
+      "relevanceNote": "Persons born in India between 01 July 1987 and 02 December 2004 are citizens by birth if either parent was a citizen of India at the time of birth. Documentary evidence of parent's citizenship may be required in certain state-level SIR contexts.",
+      "applicabilityNote": "This category is relevant where electoral roll verification requires citizenship documentation. For standard voter registration, eligibility is determined by ECI rules. Verify with your local ERO for state-specific requirements.",
+      "voterRegistrationNote": "For voter registration, visit voters.eci.gov.in or contact Voter Helpline 1950.",
+      "lastVerified": "2025-01-01",
+      "eciBriefing": "https://www.eci.gov.in",
+      "mayRequireDocuments": ["identity", "parentsCitizenship"],
+      "suggestedForms": ["form6"],
+      "displayWarning": null
+    },
+    {
+      "ruleId": "citizen-cat-C",
+      "categoryCode": "C",
+      "title": "Born after 02 December 2004",
+      "subtitle": "Citizenship by Birth — Post-2003 Amendment",
+      "icon": "School",
+      "color": "purple",
+      "verified": true,
+      "source": "Citizenship (Amendment) Act, 2003 — Section 3(1)(c)",
+      "sourceUrl": "https://www.mha.gov.in/sites/default/files/Citizenship_Act_1955.pdf",
+      "sourceDocument": "Citizenship Act, 1955 (as amended by Citizenship Amendment Act, 2003) — Ministry of Home Affairs",
+      "officialReferenceBody": "Ministry of Home Affairs, Government of India",
+      "relevanceNote": "Persons born in India after 02 December 2004 are citizens by birth only if both parents are citizens of India, or one parent is a citizen and the other is not an illegal migrant. Both parents' citizenship documentation may be required.",
+      "applicabilityNote": "This category is relevant where electoral roll verification requires citizenship documentation. For standard voter registration, eligibility is determined by ECI rules. Verify with your local ERO for state-specific requirements.",
+      "voterRegistrationNote": "For voter registration, visit voters.eci.gov.in or contact Voter Helpline 1950.",
+      "lastVerified": "2025-01-01",
+      "eciBriefing": "https://www.eci.gov.in",
+      "mayRequireDocuments": ["identity", "bothParentsCitizenship"],
+      "suggestedForms": ["form6"],
+      "displayWarning": "Please verify the exact documentary requirements for your state with your local Electoral Registration Officer (ERO) or by calling Voter Helpline 1950."
+    }
+  ],
+
+  "categoryDocumentRequirements": {
+    "identity": {
+      "ruleId": "doc-req-identity",
+      "label": "Proof of Identity",
+      "source": "Election Commission of India — Voter Registration Guidelines",
+      "sourceUrl": "https://www.eci.gov.in",
+      "sourceDocument": "ECI Voter Registration Guidelines",
+      "lastVerified": "2025-01-01",
+      "verified": true,
+      "note": "Any ONE document from the ECI-accepted list. Always verify the current list at eci.gov.in as it may be updated.",
+      "examples": ["Aadhaar Card", "PAN Card", "Passport", "Driving Licence", "Bank Passbook with Photo", "Government Employee ID"]
+    },
+    "birthPlace": {
+      "ruleId": "doc-req-birthplace",
+      "label": "Proof of Birth in India (for Category A)",
+      "source": "Citizenship Act, 1955 — Section 3(1)(a)",
+      "sourceUrl": "https://www.mha.gov.in/sites/default/files/Citizenship_Act_1955.pdf",
+      "sourceDocument": "Citizenship Act, 1955 — Ministry of Home Affairs",
+      "lastVerified": "2025-01-01",
+      "verified": true,
+      "note": "For electoral rolls requiring citizenship documentation. Specific requirements vary by state. Verify with local ERO.",
+      "examples": ["Birth Certificate", "Class 10 Certificate showing place of birth", "Hospital birth record"]
+    },
+    "parentsCitizenship": {
+      "ruleId": "doc-req-parents",
+      "label": "Parent's Citizenship Proof (for Category B)",
+      "source": "Citizenship (Amendment) Act, 1986",
+      "sourceUrl": "https://www.mha.gov.in/sites/default/files/Citizenship_Act_1955.pdf",
+      "sourceDocument": "Citizenship Act, 1955 (as amended 1986) — Ministry of Home Affairs",
+      "lastVerified": "2025-01-01",
+      "verified": true,
+      "note": "At least one parent must be a citizen of India. Specific requirements vary by state. Verify with local ERO.",
+      "examples": ["Parent's Voter ID card", "Parent's Passport", "Parent's Aadhaar Card", "Parent's Birth Certificate"]
+    },
+    "bothParentsCitizenship": {
+      "ruleId": "doc-req-both-parents",
+      "label": "Both Parents' Citizenship Proof (for Category C)",
+      "source": "Citizenship (Amendment) Act, 2003",
+      "sourceUrl": "https://www.mha.gov.in/sites/default/files/Citizenship_Act_1955.pdf",
+      "sourceDocument": "Citizenship Act, 1955 (as amended 2003) — Ministry of Home Affairs",
+      "lastVerified": "2025-01-01",
+      "verified": true,
+      "note": "Both parents must be Indian citizens OR one parent citizen and other not an illegal migrant. Specific requirements vary by state. Verify with local ERO.",
+      "examples": ["Both parents' Voter ID cards", "Both parents' Passports", "Both parents' Aadhaar Cards"]
+    }
+  },
+
+  "voterRegistrationRules": [
+    {
+      "ruleId": "voter-reg-eligibility",
+      "title": "Basic Voter Registration Eligibility",
+      "rule": "A person is entitled to be registered as a voter if: (a) they are a citizen of India, (b) they have attained the age of 18 years on the qualifying date, (c) they are ordinarily resident in the constituency.",
+      "source": "Representation of the People Act, 1950 — Section 19",
+      "sourceUrl": "https://www.eci.gov.in/acts-rules-regulations/",
+      "sourceDocument": "Representation of the People Act, 1950",
+      "officialReferenceBody": "Election Commission of India",
+      "lastVerified": "2025-01-01",
+      "verified": true,
+      "note": "The qualifying date is January 1 of the year of revision, unless otherwise notified by ECI."
+    },
+    {
+      "ruleId": "voter-reg-disqualification",
+      "title": "Disqualification from Voter Registration",
+      "rule": "A person is disqualified from registration if: (a) they are not a citizen of India, (b) they are of unsound mind declared by a competent court, (c) they are for the time being disqualified under the provisions of any law relating to corrupt practices.",
+      "source": "Representation of the People Act, 1950 — Section 16",
+      "sourceUrl": "https://www.eci.gov.in/acts-rules-regulations/",
+      "sourceDocument": "Representation of the People Act, 1950",
+      "officialReferenceBody": "Election Commission of India",
+      "lastVerified": "2025-01-01",
+      "verified": true,
+      "note": null
+    },
+    {
+      "ruleId": "voter-reg-ordinary-residence",
+      "title": "Ordinary Residence Definition",
+      "rule": "A person is ordinarily resident in a constituency if they normally reside there. Temporary absence does not break ordinary residence. A student studying away from home may register at either their home or study address.",
+      "source": "Representation of the People Act, 1950 — Section 20 and ECI Instructions",
+      "sourceUrl": "https://www.eci.gov.in",
+      "sourceDocument": "ECI Voter Registration Instructions",
+      "officialReferenceBody": "Election Commission of India",
+      "lastVerified": "2025-01-01",
+      "verified": true,
+      "note": "Verify current ECI instructions at eci.gov.in as they may be updated."
+    }
+  ],
+
+  "unverifiedNotice": "This information could not be verified through official Election Commission resources. Please contact Voter Helpline 1950 or visit www.eci.gov.in for accurate information.",
+
+  "legalDisclaimer": {
+    "primary": "This platform is a public awareness initiative. Information is sourced from publicly available Election Commission resources.",
+    "secondary": "Users should verify critical information through official Election Commission channels before taking action.",
+    "notEligibilityDetermination": "This platform does not determine eligibility, citizenship, or legal status.",
+    "notAffiliated": "This platform is not affiliated with any political party or government body.",
+    "officialSource": "Information sourced from official Election Commission of India resources.",
+    "userAction": "Always verify with your local Booth Level Officer (BLO), Electoral Registration Officer (ERO), or by calling Voter Helpline 1950."
+  }
+}

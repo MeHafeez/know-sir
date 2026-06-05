@@ -1,0 +1,40 @@
+{
+  "name": "SIR Voter Verification Help Portal",
+  "short_name": "SIR Help",
+  "description": "Special Intensive Revision — Voter Verification Guide for Indian Citizens",
+  "start_url": "/en",
+  "display": "standalone",
+  "background_color": "#1e3a5f",
+  "theme_color": "#1e3a5f",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Check Voter Status",
+      "url": "https://electoralsearch.eci.gov.in",
+      "description": "Search your name in the voter list"
+    },
+    {
+      "name": "Call Helpline",
+      "url": "tel:1950",
+      "description": "Call National Voter Helpline"
+    }
+  ],
+  "categories": ["government", "utilities"],
+  "screenshots": []
+}

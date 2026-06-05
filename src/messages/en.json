@@ -1,0 +1,244 @@
+{
+  "nav": {
+    "home": "Home",
+    "whatIsSir": "What is SIR?",
+    "documents": "Documents",
+    "steps": "How to Verify",
+    "resources": "Resources",
+    "helpline": "Helpline",
+    "languages": "Languages",
+    "simpleMode": "Simple View",
+    "darkMode": "Dark Mode"
+  },
+  "hero": {
+    "badge": "Official Voter Verification Guidance",
+    "title": "Special Intensive Revision",
+    "titleHighlight": "(SIR)",
+    "subtitle": "Verify your voter details quickly and easily.",
+    "description": "The Election Commission of India is conducting a special drive to ensure every eligible citizen is correctly registered as a voter. Complete your verification today.",
+    "cta1": "Check Official Status",
+    "cta2": "Learn How It Works",
+    "cta3": "Required Documents",
+    "stats": {
+      "voters": "97 Crore+",
+      "votersLabel": "Registered Voters",
+      "states": "28 States",
+      "statesLabel": "& 8 Union Territories",
+      "helpline": "1950",
+      "helplineLabel": "Voter Helpline"
+    }
+  },
+  "whatIsSir": {
+    "badge": "Section 1",
+    "title": "What is SIR?",
+    "subtitle": "Understanding the Special Intensive Revision of Electoral Rolls",
+    "description": "SIR (Special Intensive Revision) is a flagship programme of the Election Commission of India to verify, update, and clean electoral rolls across the country — ensuring every eligible citizen's vote counts.",
+    "features": [
+      {
+        "title": "Door-to-Door Verification",
+        "desc": "Booth Level Officers (BLOs) visit every household to verify voter details in person."
+      },
+      {
+        "title": "Remove Duplicates",
+        "desc": "Duplicate and bogus entries are identified and removed from the voter list."
+      },
+      {
+        "title": "Add New Voters",
+        "desc": "Eligible citizens who are not yet registered get added to the electoral roll."
+      },
+      {
+        "title": "Update Records",
+        "desc": "Changed addresses, names, and other details are corrected in the voter database."
+      }
+    ],
+    "keyFact": "More than 49 Crore electors received SIR Enumeration Forms in Phase II across 12 States/UTs.",
+    "keyFactSource": "— Election Commission of India (@ECISVEEP)"
+  },
+  "whyImportant": {
+    "badge": "Section 2",
+    "title": "Why Is It Important?",
+    "subtitle": "Your verified vote is the foundation of democracy",
+    "cards": [
+      {
+        "title": "Prevent Duplicate Entries",
+        "desc": "Ensure your vote is unique and cannot be duplicated by anyone else.",
+        "color": "primary"
+      },
+      {
+        "title": "Keep Details Updated",
+        "desc": "Accurate name, address, and photo on the voter roll ensures smooth voting.",
+        "color": "success"
+      },
+      {
+        "title": "Stay Registered",
+        "desc": "Eligible citizens who miss verification may be removed from electoral rolls.",
+        "color": "warning"
+      },
+      {
+        "title": "Improve Election Accuracy",
+        "desc": "Clean voter lists lead to fair, transparent, and accurate elections.",
+        "color": "secondary"
+      },
+      {
+        "title": "Exercise Your Rights",
+        "desc": "Voting is a fundamental right. Verification protects your right to vote.",
+        "color": "success"
+      },
+      {
+        "title": "Strengthen Democracy",
+        "desc": "Every verified voter strengthens India's democratic process.",
+        "color": "primary"
+      }
+    ]
+  },
+  "whoNeeds": {
+    "badge": "Section 3",
+    "title": "Who Needs to Verify?",
+    "subtitle": "Find out if you need to take action",
+    "question": "Do any of these apply to you?",
+    "options": [
+      "I am registering as a voter for the first time",
+      "I have changed my residential address",
+      "My name or personal details have changed",
+      "I have not verified in the current SIR cycle",
+      "My family members' details need updating"
+    ],
+    "actionRequired": "Action Required",
+    "actionDesc": "You need to complete SIR verification. Please follow the steps below.",
+    "actionButton": "Start Verification",
+    "noActionTitle": "You May Already Be Registered",
+    "noActionDesc": "Check your voter status online to confirm your details are current.",
+    "checkButton": "Check My Status"
+  },
+  "documents": {
+    "badge": "Section 4",
+    "title": "Required Documents",
+    "subtitle": "Keep these documents ready before starting verification",
+    "identity": "Proof of Identity",
+    "address": "Proof of Address",
+    "age": "Proof of Age",
+    "noDocTitle": "Don't have these documents?",
+    "noDocDesc": "Contact your local Booth Level Officer (BLO) or call Voter Helpline 1950 for alternative options and assistance.",
+    "callHelpline": "Call 1950"
+  },
+  "steps": {
+    "badge": "Section 5",
+    "title": "Step-by-Step Verification Guide",
+    "subtitle": "Complete your SIR verification in 6 simple steps",
+    "stepLabel": "Step"
+  },
+  "resources": {
+    "badge": "Section 7",
+    "title": "Official Resources",
+    "subtitle": "Always use official government websites only",
+    "warning": "Only trust .gov.in websites for election information. Beware of fake websites.",
+    "links": [
+      {
+        "title": "Election Commission of India",
+        "desc": "Official website of the Election Commission",
+        "url": "https://www.eci.gov.in",
+        "badge": "Official"
+      },
+      {
+        "title": "Voter Service Portal",
+        "desc": "Register, update, or check your voter ID",
+        "url": "https://voters.eci.gov.in",
+        "badge": "Register Here"
+      },
+      {
+        "title": "Electoral Search",
+        "desc": "Search your name in the voter list",
+        "url": "https://electoralsearch.eci.gov.in",
+        "badge": "Search"
+      },
+      {
+        "title": "NVSP Portal",
+        "desc": "National Voter's Service Portal",
+        "url": "https://www.nvsp.in",
+        "badge": "NVSP"
+      },
+      {
+        "title": "Download Voter Forms",
+        "desc": "Download Form 6, 7, 8 and other forms",
+        "url": "https://www.eci.gov.in/voter-registration-forms",
+        "badge": "Forms"
+      },
+      {
+        "title": "Voter Helpline",
+        "desc": "Call 1950 for all voter queries",
+        "url": "tel:1950",
+        "badge": "1950"
+      }
+    ]
+  },
+  "faq": {
+    "badge": "Section 8",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about SIR verification"
+  },
+  "emergency": {
+    "badge": "Section 9",
+    "title": "Emergency Help",
+    "subtitle": "Reach out immediately if you need urgent assistance",
+    "stateDirectory": "State-wise Contact Directory",
+    "stateDesc": "Find your state election office contact in Section 10 below"
+  },
+  "stateWise": {
+    "badge": "Section 10",
+    "title": "State-Wise Information",
+    "subtitle": "Find your state election office and local helpline",
+    "selectState": "Select Your State",
+    "ceoWebsite": "CEO Website",
+    "stateHelpline": "State Helpline",
+    "localLanguage": "Local Language",
+    "visitWebsite": "Visit Official Website"
+  },
+  "footer": {
+    "disclaimer": "This platform provides guidance only and is not affiliated with any political party.",
+    "source": "Information sourced from official Election Commission of India resources.",
+    "copyright": "© 2025 SIR Verification Help Portal. Public Awareness Initiative.",
+    "links": {
+      "eci": "Election Commission of India",
+      "voters": "Voter Portal",
+      "privacy": "Privacy Policy",
+      "accessibility": "Accessibility"
+    }
+  },
+  "accessibility": {
+    "title": "Accessibility Options",
+    "fontSize": "Text Size",
+    "fontSmall": "Small",
+    "fontNormal": "Normal",
+    "fontLarge": "Large",
+    "fontXL": "Extra Large",
+    "highContrast": "High Contrast",
+    "dyslexiaFont": "Dyslexia-Friendly Font",
+    "simpleLanguage": "Simple Language Mode",
+    "textToSpeech": "Text to Speech",
+    "reset": "Reset All"
+  },
+  "ai": {
+    "title": "AI Voter Assistant",
+    "subtitle": "Ask me anything about voter verification",
+    "placeholder": "Ask: What documents do I need?",
+    "send": "Send",
+    "thinking": "Thinking...",
+    "greeting": "Hello! I am your Voter Verification Assistant. I can help you with SIR verification, required documents, form filling, and more. What would you like to know?",
+    "suggestions": [
+      "What documents do I need?",
+      "How do I verify online?",
+      "Can I use Aadhaar?",
+      "My name is missing from voter list",
+      "What is a BLO?"
+    ]
+  },
+  "simpleMode": {
+    "banner": "Simple View is ON — Larger text, more visuals, easier language",
+    "turnOff": "Turn Off Simple View"
+  },
+  "meta": {
+    "title": "SIR Voter Verification Help Portal | Special Intensive Revision Guide",
+    "description": "Official guidance on Special Intensive Revision (SIR) — India's voter verification process. Learn required documents, step-by-step verification, FAQs and helpline 1950.",
+    "keywords": "SIR voter verification, Special Intensive Revision, electoral roll, voter ID, Aadhaar voter, ECI, election commission, BLO, voter helpline 1950"
+  }
+}

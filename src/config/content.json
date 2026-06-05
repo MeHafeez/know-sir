@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "lastUpdated": "2025-06-05",
+    "version": "1.0.0",
+    "disclaimer": "This platform provides guidance only and is not affiliated with any political party. Information sourced from official Election Commission of India resources.",
+    "source": "Election Commission of India — eci.gov.in"
+  },
+  "officialLinks": {
+    "eciMain": "https://www.eci.gov.in",
+    "voterPortal": "https://voters.eci.gov.in",
+    "nvsp": "https://www.nvsp.in",
+    "voterSearch": "https://electoralsearch.eci.gov.in",
+    "form6": "https://voters.eci.gov.in/registration",
+    "form7": "https://voters.eci.gov.in/registration",
+    "form8": "https://voters.eci.gov.in/registration",
+    "grievance": "https://pgportal.gov.in",
+    "ceoDelhi": "https://ceodelhi.gov.in/SIR2025.aspx",
+    "downloadForms": "https://www.eci.gov.in/voter-registration-forms"
+  },
+  "helpline": {
+    "national": "1950",
+    "ecisveep": "1800-111-950",
+    "email": "complaints@eci.gov.in",
+    "workingHours": "Monday–Saturday, 10:00 AM – 5:00 PM"
+  },
+  "documents": [
+    {
+      "id": "aadhaar",
+      "name": "Aadhaar Card",
+      "description": "Issued by UIDAI. Accepted as both identity and address proof.",
+      "icon": "fingerprint",
+      "proofType": ["identity", "address"],
+      "officiallyAccepted": true
+    },
+    {
+      "id": "voter_id",
+      "name": "Voter ID (EPIC)",
+      "description": "Electoral Photo Identity Card issued by Election Commission.",
+      "icon": "credit-card",
+      "proofType": ["identity"],
+      "officiallyAccepted": true
+    },
+    {
+      "id": "passport",
+      "name": "Passport",
+      "description": "Valid Indian Passport accepted as identity and address proof.",
+      "icon": "book-open",
+      "proofType": ["identity", "address", "age"],
+      "officiallyAccepted": true
+    },
+    {
+      "id": "driving_license",
+      "name": "Driving Licence",
+      "description": "Valid Driving Licence issued by Regional Transport Office.",
+      "icon": "car",
+      "proofType": ["identity", "address"],
+      "officiallyAccepted": true
+    },
+    {
+      "id": "pan_card",
+      "name": "PAN Card",
+      "description": "Permanent Account Number card issued by Income Tax Department.",
+      "icon": "hash",
+      "proofType": ["identity"],
+      "officiallyAccepted": true
+    },
+    {
+      "id": "birth_certificate",
+      "name": "Birth Certificate",
+      "description": "Municipal corporation / Panchayat issued birth certificate.",
+      "icon": "baby",
+      "proofType": ["age"],
+      "officiallyAccepted": true
+    },
+    {
+      "id": "utility_bills",
+      "name": "Utility Bills",
+      "description": "Electricity, water, gas, or telephone bill (not older than 3 months).",
+      "icon": "zap",
+      "proofType": ["address"],
+      "officiallyAccepted": true
+    },
+    {
+      "id": "bank_passbook",
+      "name": "Bank Passbook",
+      "description": "Passbook or statement with photo, address issued by recognised bank.",
+      "icon": "landmark",
+      "proofType": ["identity", "address"],
+      "officiallyAccepted": true
+    },
+    {
+      "id": "nprs",
+      "name": "NREGA / MNREGA Card",
+      "description": "National Rural Employment Guarantee Job Card.",
+      "icon": "users",
+      "proofType": ["identity"],
+      "officiallyAccepted": true
+    },
+    {
+      "id": "pension_doc",
+      "name": "Pension / Service ID",
+      "description": "Central / State Government service identity card or pension document.",
+      "icon": "shield",
+      "proofType": ["identity"],
+      "officiallyAccepted": true
+    }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "title": "Check Your Voter Status",
+      "description": "Visit voters.eci.gov.in and search your name in the electoral roll using your EPIC number or personal details.",
+      "icon": "search",
+      "link": "https://electoralsearch.eci.gov.in",
+      "linkText": "Search Your Name"
+    },
+    {
+      "id": 2,
+      "title": "Gather Required Documents",
+      "description": "Keep Aadhaar Card, Voter ID (EPIC), proof of address, and proof of age ready before starting.",
+      "icon": "folder-open",
+      "link": null,
+      "linkText": null
+    },
+    {
+      "id": 3,
+      "title": "Fill Verification Form",
+      "description": "Complete the enumeration form either online at voters.eci.gov.in, or accept it from your local Booth Level Officer (BLO) during their visit.",
+      "icon": "file-text",
+      "link": "https://voters.eci.gov.in",
+      "linkText": "Fill Form Online"
+    },
+    {
+      "id": 4,
+      "title": "Submit Documents",
+      "description": "Upload or submit self-attested copies of required documents with your form. BLO will collect them during the door-to-door visit.",
+      "icon": "upload",
+      "link": null,
+      "linkText": null
+    },
+    {
+      "id": 5,
+      "title": "Track Application Status",
+      "description": "Use your reference number to track the status of your application online at the Voter Portal.",
+      "icon": "activity",
+      "link": "https://voters.eci.gov.in",
+      "linkText": "Track Status"
+    },
+    {
+      "id": 6,
+      "title": "Receive Confirmation",
+      "description": "After verification, your name will appear on the published draft electoral roll. Final rolls are published after objections are resolved.",
+      "icon": "check-circle",
+      "link": null,
+      "linkText": null
+    }
+  ],
+  "faqs": [
+    {
+      "id": "what-is-sir",
+      "question": "What is Special Intensive Revision (SIR)?",
+      "answer": "SIR (Special Intensive Revision) is a comprehensive voter list verification exercise conducted by the Election Commission of India (ECI). It ensures that the electoral rolls are accurate, free from duplicates, and include all eligible citizens. BLOs (Booth Level Officers) visit households to verify and update voter information."
+    },
+    {
+      "id": "who-must-verify",
+      "question": "Who must participate in SIR verification?",
+      "answer": "All eligible citizens aged 18 and above in states/UTs where SIR is currently being conducted must participate. This includes new voters, citizens who have changed address, those whose details have changed, and existing voters whose data requires verification."
+    },
+    {
+      "id": "documents-required",
+      "question": "What documents are required for SIR verification?",
+      "answer": "You need: (1) Proof of Identity — Aadhaar Card, Voter ID, Passport, PAN Card, or Driving Licence; (2) Proof of Address — Aadhaar Card, Utility Bills (within 3 months), Bank Passbook, Passport; (3) Proof of Age — Birth Certificate, Passport, School Certificate. Aadhaar Card is the most convenient document as it serves all three purposes."
+    },
+    {
+      "id": "online-verification",
+      "question": "Can SIR verification be done online?",
+      "answer": "Yes! Where online submission is enabled, you can fill the enumeration form at voters.eci.gov.in. Enter your EPIC number, verify details, provide e-consent via OTP, and submit electronically. You can also receive the form from your Booth Level Officer during their door-to-door visit."
+    },
+    {
+      "id": "check-status",
+      "question": "How do I check my voter registration status?",
+      "answer": "Visit electoralsearch.eci.gov.in to search your name. You can search by EPIC Number (Voter ID number) or by entering your name, father's/husband's name, age, state, and district. You will receive your voter list details if found."
+    },
+    {
+      "id": "name-missing",
+      "question": "What if my name is missing from the voter list?",
+      "answer": "If your name is not in the electoral roll, fill Form 6 (for new registration) at voters.eci.gov.in. You can also contact your local BLO or Electoral Registration Officer (ERO). Call the national Voter Helpline 1950 for guidance."
+    },
+    {
+      "id": "wrong-details",
+      "question": "What if my details are wrong in the voter list?",
+      "answer": "Fill Form 8 (for correction of entries) at voters.eci.gov.in to correct personal details such as name, address, photo, or EPIC. Submit the corrected form with supporting documents."
+    },
+    {
+      "id": "contact-support",
+      "question": "How can I contact election support?",
+      "answer": "Call the National Voter Helpline 1950 (toll-free). Alternatively call 1800-111-950. Email complaints@eci.gov.in. Visit your local Electoral Registration Office or contact your state CEO's office."
+    },
+    {
+      "id": "blo-visit",
+      "question": "What happens during the BLO door-to-door visit?",
+      "answer": "The Booth Level Officer (BLO) assigned to your polling booth visits your household during the SIR period. They will give you an enumeration form, verify your existing details, collect new voter applications, and record changes. Cooperate with the BLO and show required documents."
+    },
+    {
+      "id": "draft-rolls",
+      "question": "What are draft electoral rolls and how can I check them?",
+      "answer": "After verification, the ECI publishes draft electoral rolls that are available for public inspection. You can view them at your local Electoral Registration Office, at the Voter Portal online, or at the Designated Locations announced by the ECI. You can file claims or objections during the specified period."
+    }
+  ],
+  "emergencyContacts": [
+    {
+      "id": "voter-helpline",
+      "title": "National Voter Helpline",
+      "number": "1950",
+      "description": "Toll-free helpline for all voter registration queries",
+      "icon": "phone",
+      "color": "success"
+    },
+    {
+      "id": "eci-helpline",
+      "title": "ECI SVEEP Helpline",
+      "number": "1800-111-950",
+      "description": "Systematic Voters' Education and Electoral Participation",
+      "icon": "phone-call",
+      "color": "primary"
+    },
+    {
+      "id": "eci-email",
+      "title": "ECI Email Support",
+      "number": "complaints@eci.gov.in",
+      "description": "Email for complaints and grievances",
+      "icon": "mail",
+      "color": "secondary"
+    },
+    {
+      "id": "pgportal",
+      "title": "Public Grievance Portal",
+      "number": "pgportal.gov.in",
+      "description": "File formal grievances with Government of India",
+      "icon": "alert-circle",
+      "color": "warning"
+    }
+  ],
+  "states": [
+    { "code": "AP", "name": "Andhra Pradesh", "ceoUrl": "https://ceoandhra.nic.in", "helpline": "1800-425-6400", "language": "Telugu" },
+    { "code": "AR", "name": "Arunachal Pradesh", "ceoUrl": "https://ceoarunachal.nic.in", "helpline": "1950", "language": "English" },
+    { "code": "AS", "name": "Assam", "ceoUrl": "https://ceoassam.nic.in", "helpline": "1950", "language": "Assamese" },
+    { "code": "BR", "name": "Bihar", "ceoUrl": "https://ceobihar.nic.in", "helpline": "1950", "language": "Hindi" },
+    { "code": "CG", "name": "Chhattisgarh", "ceoUrl": "https://ceochhattisgarh.nic.in", "helpline": "1950", "language": "Hindi" },
+    { "code": "GA", "name": "Goa", "ceoUrl": "https://ceogoa.nic.in", "helpline": "1950", "language": "Konkani" },
+    { "code": "GJ", "name": "Gujarat", "ceoUrl": "https://ceo.gujarat.gov.in", "helpline": "1950", "language": "Gujarati" },
+    { "code": "HR", "name": "Haryana", "ceoUrl": "https://ceoharyana.gov.in", "helpline": "1950", "language": "Hindi" },
+    { "code": "HP", "name": "Himachal Pradesh", "ceoUrl": "https://himachal.nic.in/election", "helpline": "1950", "language": "Hindi" },
+    { "code": "JH", "name": "Jharkhand", "ceoUrl": "https://jharkhand.gov.in/election", "helpline": "1950", "language": "Hindi" },
+    { "code": "KA", "name": "Karnataka", "ceoUrl": "https://ceokarnataka.kar.nic.in", "helpline": "1800-425-1380", "language": "Kannada" },
+    { "code": "KL", "name": "Kerala", "ceoUrl": "https://www.ceo.kerala.gov.in", "helpline": "1950", "language": "Malayalam" },
+    { "code": "MP", "name": "Madhya Pradesh", "ceoUrl": "https://ceomponline.com", "helpline": "1950", "language": "Hindi" },
+    { "code": "MH", "name": "Maharashtra", "ceoUrl": "https://www.ceo.maharashtra.gov.in", "helpline": "1950", "language": "Marathi" },
+    { "code": "MN", "name": "Manipur", "ceoUrl": "https://ceomanipur.nic.in", "helpline": "1950", "language": "Meitei" },
+    { "code": "ML", "name": "Meghalaya", "ceoUrl": "https://ceomeghalaya.nic.in", "helpline": "1950", "language": "English" },
+    { "code": "MZ", "name": "Mizoram", "ceoUrl": "https://ceomizoram.nic.in", "helpline": "1950", "language": "Mizo" },
+    { "code": "NL", "name": "Nagaland", "ceoUrl": "https://ceonagaland.nic.in", "helpline": "1950", "language": "English" },
+    { "code": "OD", "name": "Odisha", "ceoUrl": "https://ceoorissa.nic.in", "helpline": "1950", "language": "Odia" },
+    { "code": "PB", "name": "Punjab", "ceoUrl": "https://ceopunjab.nic.in", "helpline": "1950", "language": "Punjabi" },
+    { "code": "RJ", "name": "Rajasthan", "ceoUrl": "https://ceorajasthan.nic.in", "helpline": "1950", "language": "Hindi" },
+    { "code": "SK", "name": "Sikkim", "ceoUrl": "https://ceosikkim.nic.in", "helpline": "1950", "language": "Nepali" },
+    { "code": "TN", "name": "Tamil Nadu", "ceoUrl": "https://www.elections.tn.gov.in", "helpline": "1950", "language": "Tamil" },
+    { "code": "TS", "name": "Telangana", "ceoUrl": "https://ceotelangana.nic.in", "helpline": "1950", "language": "Telugu" },
+    { "code": "TR", "name": "Tripura", "ceoUrl": "https://ceotripura.nic.in", "helpline": "1950", "language": "Bengali" },
+    { "code": "UP", "name": "Uttar Pradesh", "ceoUrl": "https://ceouttarpradesh.nic.in", "helpline": "1950", "language": "Hindi" },
+    { "code": "UK", "name": "Uttarakhand", "ceoUrl": "https://ceo.uk.gov.in", "helpline": "1950", "language": "Hindi" },
+    { "code": "WB", "name": "West Bengal", "ceoUrl": "https://ceowestbengal.nic.in", "helpline": "1950", "language": "Bengali" },
+    { "code": "DL", "name": "Delhi", "ceoUrl": "https://ceodelhi.gov.in", "helpline": "1950", "language": "Hindi" },
+    { "code": "JK", "name": "Jammu & Kashmir", "ceoUrl": "https://ceojammukashmir.nic.in", "helpline": "1950", "language": "Urdu/Hindi" },
+    { "code": "LA", "name": "Ladakh", "ceoUrl": "https://ladakh.gov.in/election", "helpline": "1950", "language": "Hindi" }
+  ],
+  "languages": [
+    { "code": "en", "name": "English", "nativeName": "English" },
+    { "code": "hi", "name": "Hindi", "nativeName": "हिन्दी" },
+    { "code": "te", "name": "Telugu", "nativeName": "తెలుగు" },
+    { "code": "ta", "name": "Tamil", "nativeName": "தமிழ்" },
+    { "code": "kn", "name": "Kannada", "nativeName": "ಕನ್ನಡ" },
+    { "code": "ml", "name": "Malayalam", "nativeName": "മലയാളം" },
+    { "code": "mr", "name": "Marathi", "nativeName": "मराठी" },
+    { "code": "gu", "name": "Gujarati", "nativeName": "ગુજરાતી" },
+    { "code": "pa", "name": "Punjabi", "nativeName": "ਪੰਜਾਬੀ" },
+    { "code": "bn", "name": "Bengali", "nativeName": "বাংলা" },
+    { "code": "or", "name": "Odia", "nativeName": "ଓଡ଼ିଆ" },
+    { "code": "as", "name": "Assamese", "nativeName": "অসমীয়া" },
+    { "code": "ur", "name": "Urdu", "nativeName": "اردو" }
+  ]
+}

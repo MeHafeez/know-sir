@@ -1,0 +1,572 @@
+{
+  "_meta": {
+    "source": "Election Commission of India — Official SIR Notifications & FAQs",
+    "officialPortal": "https://www.eci.gov.in",
+    "voterPortal": "https://voters.eci.gov.in",
+    "nvsp": "https://www.nvsp.in",
+    "helpline": "1950",
+    "disclaimer": "This portal is an independent public awareness platform and is not affiliated with any political party. All information is sourced from official Election Commission of India resources.",
+    "attribution": "Information sourced from official Election Commission resources.",
+    "lastReviewed": "Please verify with official ECI sources for the latest updates.",
+    "updateNote": "All rules, documents, and procedures shown here reflect publicly available ECI guidance. Citizens should always verify with their local BLO or CEO office."
+  },
+
+  "voterCategories": [
+    {
+      "id": "existing_voter",
+      "labelKey": "wizard.cat.existingVoter",
+      "icon": "UserCheck",
+      "color": "green",
+      "description": "Already enrolled in the electoral roll",
+      "officialRef": "https://electoralsearch.eci.gov.in"
+    },
+    {
+      "id": "new_applicant",
+      "labelKey": "wizard.cat.newApplicant",
+      "icon": "UserPlus",
+      "color": "blue",
+      "description": "Never registered as a voter before",
+      "officialRef": "https://voters.eci.gov.in"
+    },
+    {
+      "id": "address_change",
+      "labelKey": "wizard.cat.addressChange",
+      "icon": "MapPin",
+      "color": "orange",
+      "description": "Registered voter who has shifted residence",
+      "officialRef": "https://voters.eci.gov.in"
+    },
+    {
+      "id": "name_correction",
+      "labelKey": "wizard.cat.nameCorrection",
+      "icon": "Edit",
+      "color": "purple",
+      "description": "Registered voter with name/details mismatch",
+      "officialRef": "https://voters.eci.gov.in"
+    }
+  ],
+
+  "forms": [
+    {
+      "id": "form6",
+      "name": "Form 6",
+      "purpose": "Fresh enrollment / Registration as a voter",
+      "applicableTo": ["new_applicant"],
+      "downloadUrl": "https://voters.eci.gov.in/",
+      "officialRef": "https://www.eci.gov.in/voter-registration",
+      "note": "For first-time enrollment in electoral rolls"
+    },
+    {
+      "id": "form6a",
+      "name": "Form 6A",
+      "purpose": "Enrollment of Overseas Indian Citizens (NRI voters)",
+      "applicableTo": ["nri"],
+      "downloadUrl": "https://voters.eci.gov.in/",
+      "officialRef": "https://www.eci.gov.in/voter-registration",
+      "note": "For Indian citizens living abroad"
+    },
+    {
+      "id": "form7",
+      "name": "Form 7",
+      "purpose": "Deletion of name from electoral roll / Objection",
+      "applicableTo": ["objection"],
+      "downloadUrl": "https://voters.eci.gov.in/",
+      "officialRef": "https://www.eci.gov.in/voter-registration",
+      "note": "For objecting to inclusion of any name"
+    },
+    {
+      "id": "form8",
+      "name": "Form 8",
+      "purpose": "Correction of entries / Transposition / Marking of PwD",
+      "applicableTo": ["existing_voter", "address_change", "name_correction", "pwd"],
+      "downloadUrl": "https://voters.eci.gov.in/",
+      "officialRef": "https://www.eci.gov.in/voter-registration",
+      "note": "For corrections, address within same constituency, or PwD marking"
+    }
+  ],
+
+  "documentGroups": [
+    {
+      "id": "identity",
+      "label": "Proof of Identity",
+      "icon": "CreditCard",
+      "color": "blue",
+      "note": "Any one document from the list below (as accepted by ECI)",
+      "officialRef": "https://www.eci.gov.in",
+      "documents": [
+        { "id": "aadhaar", "name": "Aadhaar Card", "icon": "fingerprint", "note": "UIDAI issued" },
+        { "id": "pan", "name": "PAN Card", "icon": "credit-card", "note": "Income Tax Dept issued" },
+        { "id": "passport", "name": "Passport", "icon": "book-open", "note": "Valid Indian passport" },
+        { "id": "dl", "name": "Driving Licence", "icon": "car", "note": "Government issued" },
+        { "id": "bank_passbook", "name": "Bank Passbook with Photo", "icon": "book", "note": "Nationalised/Scheduled Bank" },
+        { "id": "govt_id", "name": "Government / PSU Employee ID Card", "icon": "badge", "note": "With photo" },
+        { "id": "student_id", "name": "Student ID Card", "icon": "graduation-cap", "note": "Recognised university/school" },
+        { "id": "job_card", "name": "MNREGA Job Card", "icon": "briefcase", "note": "Issued by Gram Panchayat" }
+      ]
+    },
+    {
+      "id": "address",
+      "label": "Proof of Address / Ordinary Residence",
+      "icon": "Home",
+      "color": "green",
+      "note": "Any one document showing current address (as accepted by ECI)",
+      "officialRef": "https://www.eci.gov.in",
+      "documents": [
+        { "id": "aadhaar_addr", "name": "Aadhaar Card", "icon": "fingerprint", "note": "With current address" },
+        { "id": "bank_stmt", "name": "Bank / Post Office Statement", "icon": "file-text", "note": "Recent — check ECI guidelines for validity period" },
+        { "id": "utility_bill", "name": "Utility Bill (Electricity / Gas / Water / Phone)", "icon": "zap", "note": "Recent — check ECI guidelines for validity period" },
+        { "id": "ration_card", "name": "Ration Card with Address", "icon": "shopping-bag", "note": "Issued by State Government" },
+        { "id": "rent_agreement", "name": "Registered Rent Agreement", "icon": "home", "note": "Registered with competent authority" },
+        { "id": "post_letter", "name": "Post Office / Speed Post Delivery Letter with Address", "icon": "mail", "note": "Addressed to applicant" }
+      ]
+    },
+    {
+      "id": "age",
+      "label": "Proof of Age / Date of Birth",
+      "icon": "Calendar",
+      "color": "purple",
+      "note": "Any one document (as accepted by ECI) — required when date of birth is not verifiable",
+      "officialRef": "https://www.eci.gov.in",
+      "documents": [
+        { "id": "birth_cert", "name": "Birth Certificate", "icon": "file-text", "note": "Issued by Municipal Authority / Gram Panchayat" },
+        { "id": "class10_cert", "name": "Class 10 Marksheet / Certificate", "icon": "graduation-cap", "note": "Showing date of birth" },
+        { "id": "passport_age", "name": "Passport", "icon": "book-open", "note": "Showing date of birth" },
+        { "id": "aadhaar_age", "name": "Aadhaar Card", "icon": "fingerprint", "note": "Showing date of birth if available" }
+      ]
+    },
+    {
+      "id": "photo",
+      "label": "Recent Passport-Size Photograph",
+      "icon": "Camera",
+      "color": "orange",
+      "note": "Recent passport-size photograph as required by the form",
+      "officialRef": "https://www.eci.gov.in",
+      "documents": [
+        { "id": "photo", "name": "Recent Passport-Size Photograph", "icon": "camera", "note": "As specified in form instructions" }
+      ]
+    }
+  ],
+
+  "officialLinks": [
+    {
+      "id": "eci",
+      "name": "Election Commission of India",
+      "url": "https://www.eci.gov.in",
+      "purpose": "Official ECI portal — notifications, circulars, voter education",
+      "icon": "Globe",
+      "badge": "Official"
+    },
+    {
+      "id": "voters_portal",
+      "name": "Voter Services Portal",
+      "url": "https://voters.eci.gov.in",
+      "purpose": "Online voter registration, form submission, EPIC download",
+      "icon": "UserCheck",
+      "badge": "Official"
+    },
+    {
+      "id": "electoralsearch",
+      "name": "Electoral Roll Search",
+      "url": "https://electoralsearch.eci.gov.in",
+      "purpose": "Check if your name is in the voter list",
+      "icon": "Search",
+      "badge": "Official"
+    },
+    {
+      "id": "nvsp",
+      "name": "National Voter Service Portal (NVSP)",
+      "url": "https://www.nvsp.in",
+      "purpose": "Voter registration and services",
+      "icon": "Globe",
+      "badge": "Official"
+    },
+    {
+      "id": "blo",
+      "name": "Know Your BLO",
+      "url": "https://voters.eci.gov.in/",
+      "purpose": "Find your local Booth Level Officer for in-person assistance",
+      "icon": "MapPin",
+      "badge": "Official"
+    },
+    {
+      "id": "helpline",
+      "name": "Voter Helpline 1950",
+      "url": "tel:1950",
+      "purpose": "Call for voter registration assistance (check local availability)",
+      "icon": "Phone",
+      "badge": "Helpline"
+    }
+  ],
+
+  "scenarios": [
+    {
+      "id": "senior_citizen",
+      "icon": "👴",
+      "color": "amber",
+      "titleKey": "scenario.senior.title",
+      "subtitleKey": "scenario.senior.subtitle",
+      "situation": "Elderly person, may have Aadhaar or Ration Card",
+      "steps": [
+        { "step": 1, "action": "Check if name exists in voter list", "link": "https://electoralsearch.eci.gov.in", "icon": "Search" },
+        { "step": 2, "action": "If not found — fill Form 6 with BLO assistance", "link": "https://voters.eci.gov.in/", "icon": "FileText" },
+        { "step": 3, "action": "Documents: Aadhaar / Ration Card / any Govt ID", "link": null, "icon": "CreditCard" },
+        { "step": 4, "action": "Submit to local BLO or online via Voter Portal", "link": "https://voters.eci.gov.in/", "icon": "Send" }
+      ],
+      "applicableForms": ["form6", "form8"],
+      "documentGroups": ["identity", "address", "photo"]
+    },
+    {
+      "id": "new_voter",
+      "icon": "🧑",
+      "color": "blue",
+      "titleKey": "scenario.newVoter.title",
+      "subtitleKey": "scenario.newVoter.subtitle",
+      "situation": "First-time voter, 18 years or above",
+      "steps": [
+        { "step": 1, "action": "Confirm you meet the eligibility criteria as per ECI", "link": "https://www.eci.gov.in", "icon": "CheckCircle" },
+        { "step": 2, "action": "Fill Form 6 online or offline", "link": "https://voters.eci.gov.in/", "icon": "FileText" },
+        { "step": 3, "action": "Documents: Age proof + Address proof + Photo", "link": null, "icon": "CreditCard" },
+        { "step": 4, "action": "Submit online or to local BLO / ERO", "link": "https://voters.eci.gov.in/", "icon": "Send" }
+      ],
+      "applicableForms": ["form6"],
+      "documentGroups": ["identity", "address", "age", "photo"]
+    },
+    {
+      "id": "college_student",
+      "icon": "🎓",
+      "color": "indigo",
+      "titleKey": "scenario.student.title",
+      "subtitleKey": "scenario.student.subtitle",
+      "situation": "Student living away from hometown",
+      "steps": [
+        { "step": 1, "action": "Decide: register at home address or college address", "link": "https://www.eci.gov.in", "icon": "Home" },
+        { "step": 2, "action": "Use Form 6 for new registration", "link": "https://voters.eci.gov.in/", "icon": "FileText" },
+        { "step": 3, "action": "College ID + Hostel allotment letter can support address proof", "link": null, "icon": "GraduationCap" },
+        { "step": 4, "action": "Submit via Voter Portal or college camp if available", "link": "https://voters.eci.gov.in/", "icon": "Send" }
+      ],
+      "applicableForms": ["form6"],
+      "documentGroups": ["identity", "address", "age", "photo"]
+    },
+    {
+      "id": "married_woman",
+      "icon": "👩",
+      "color": "pink",
+      "titleKey": "scenario.marriedWoman.title",
+      "subtitleKey": "scenario.marriedWoman.subtitle",
+      "situation": "Married woman with name or address change",
+      "steps": [
+        { "step": 1, "action": "Check existing voter registration status", "link": "https://electoralsearch.eci.gov.in", "icon": "Search" },
+        { "step": 2, "action": "Use Form 8 for name correction or address change", "link": "https://voters.eci.gov.in/", "icon": "FileText" },
+        { "step": 3, "action": "Marriage certificate + new address proof", "link": null, "icon": "CreditCard" },
+        { "step": 4, "action": "Submit to local BLO or ERO", "link": "https://voters.eci.gov.in/", "icon": "Send" }
+      ],
+      "applicableForms": ["form8"],
+      "documentGroups": ["identity", "address", "photo"]
+    },
+    {
+      "id": "migrant_worker",
+      "icon": "🏗️",
+      "color": "orange",
+      "titleKey": "scenario.migrant.title",
+      "subtitleKey": "scenario.migrant.subtitle",
+      "situation": "Worker living away from hometown for employment",
+      "steps": [
+        { "step": 1, "action": "You can vote where you are ordinarily resident", "link": "https://www.eci.gov.in", "icon": "Info" },
+        { "step": 2, "action": "Use Form 6 to register at current address", "link": "https://voters.eci.gov.in/", "icon": "FileText" },
+        { "step": 3, "action": "Address: Employer letter / Rent agreement / Utility bill", "link": null, "icon": "Home" },
+        { "step": 4, "action": "Contact local BLO for assistance", "link": "https://voters.eci.gov.in/", "icon": "MapPin" }
+      ],
+      "applicableForms": ["form6"],
+      "documentGroups": ["identity", "address", "photo"]
+    },
+    {
+      "id": "nri",
+      "icon": "✈️",
+      "color": "teal",
+      "titleKey": "scenario.nri.title",
+      "subtitleKey": "scenario.nri.subtitle",
+      "situation": "Indian citizen living abroad (NRI voter)",
+      "steps": [
+        { "step": 1, "action": "NRIs can register using Form 6A", "link": "https://voters.eci.gov.in/", "icon": "Globe" },
+        { "step": 2, "action": "Must be ordinarily resident in India address in electoral roll", "link": "https://www.eci.gov.in", "icon": "Info" },
+        { "step": 3, "action": "Documents: Valid Indian Passport", "link": null, "icon": "BookOpen" },
+        { "step": 4, "action": "Register via Voter Portal online", "link": "https://voters.eci.gov.in/", "icon": "Send" }
+      ],
+      "applicableForms": ["form6a"],
+      "documentGroups": ["identity", "photo"]
+    },
+    {
+      "id": "pwd",
+      "icon": "♿",
+      "color": "violet",
+      "titleKey": "scenario.pwd.title",
+      "subtitleKey": "scenario.pwd.subtitle",
+      "situation": "Person with disability",
+      "steps": [
+        { "step": 1, "action": "Check voter registration status", "link": "https://electoralsearch.eci.gov.in", "icon": "Search" },
+        { "step": 2, "action": "Request PwD marking via Form 8 if not already marked", "link": "https://voters.eci.gov.in/", "icon": "FileText" },
+        { "step": 3, "action": "Disability certificate may be required for PwD marking", "link": null, "icon": "CreditCard" },
+        { "step": 4, "action": "Contact BLO for home visit assistance if needed", "link": "https://voters.eci.gov.in/", "icon": "Home" }
+      ],
+      "applicableForms": ["form8"],
+      "documentGroups": ["identity", "address", "photo"]
+    },
+    {
+      "id": "address_changed",
+      "icon": "🏠",
+      "color": "cyan",
+      "titleKey": "scenario.addressChanged.title",
+      "subtitleKey": "scenario.addressChanged.subtitle",
+      "situation": "Voter who has moved to a new address",
+      "steps": [
+        { "step": 1, "action": "If shifted within same constituency — use Form 8 (transposition)", "link": "https://voters.eci.gov.in/", "icon": "ArrowRight" },
+        { "step": 2, "action": "If shifted to different constituency — use Form 6 at new address", "link": "https://voters.eci.gov.in/", "icon": "FileText" },
+        { "step": 3, "action": "New address proof required", "link": null, "icon": "Home" },
+        { "step": 4, "action": "Submit online or to local BLO at new address", "link": "https://voters.eci.gov.in/", "icon": "Send" }
+      ],
+      "applicableForms": ["form6", "form8"],
+      "documentGroups": ["identity", "address", "photo"]
+    }
+  ],
+
+  "wizardFlow": {
+    "startQuestion": "q1",
+    "questions": [
+      {
+        "id": "q1",
+        "textKey": "wizard.q1.text",
+        "icon": "UserCheck",
+        "options": [
+          { "id": "q1_yes", "labelKey": "wizard.q1.yes", "icon": "CheckCircle", "color": "green", "next": "q2" },
+          { "id": "q1_no", "labelKey": "wizard.q1.no", "icon": "XCircle", "color": "blue", "next": "q3" }
+        ]
+      },
+      {
+        "id": "q2",
+        "textKey": "wizard.q2.text",
+        "icon": "Search",
+        "options": [
+          { "id": "q2_found", "labelKey": "wizard.q2.found", "icon": "CheckCircle", "color": "green", "next": "q4" },
+          { "id": "q2_notfound", "labelKey": "wizard.q2.notFound", "icon": "AlertCircle", "color": "orange", "next": "q5" }
+        ]
+      },
+      {
+        "id": "q3",
+        "textKey": "wizard.q3.text",
+        "icon": "User",
+        "options": [
+          { "id": "q3_indian", "labelKey": "wizard.q3.indian", "icon": "Flag", "color": "green", "next": "q6" },
+          { "id": "q3_nri", "labelKey": "wizard.q3.nri", "icon": "Plane", "color": "blue", "next": "result_nri" }
+        ]
+      },
+      {
+        "id": "q4",
+        "textKey": "wizard.q4.text",
+        "icon": "MapPin",
+        "options": [
+          { "id": "q4_same", "labelKey": "wizard.q4.same", "icon": "Home", "color": "green", "next": "result_existing_ok" },
+          { "id": "q4_moved_same", "labelKey": "wizard.q4.movedSame", "icon": "ArrowRight", "color": "orange", "next": "result_form8_transpose" },
+          { "id": "q4_moved_diff", "labelKey": "wizard.q4.movedDiff", "icon": "Map", "color": "red", "next": "result_form6_new" }
+        ]
+      },
+      {
+        "id": "q5",
+        "textKey": "wizard.q5.text",
+        "icon": "AlertCircle",
+        "options": [
+          { "id": "q5_details_wrong", "labelKey": "wizard.q5.detailsWrong", "icon": "Edit", "color": "orange", "next": "result_form8_correction" },
+          { "id": "q5_not_enrolled", "labelKey": "wizard.q5.notEnrolled", "icon": "UserPlus", "color": "blue", "next": "q6" }
+        ]
+      },
+      {
+        "id": "q6",
+        "textKey": "wizard.q6.text",
+        "icon": "Globe",
+        "options": [
+          { "id": "q6_resident", "labelKey": "wizard.q6.resident", "icon": "Home", "color": "green", "next": "result_form6_new" },
+          { "id": "q6_nri", "labelKey": "wizard.q6.nri", "icon": "Plane", "color": "blue", "next": "result_nri" }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": "result_existing_ok",
+        "type": "success",
+        "titleKey": "wizard.result.existingOk.title",
+        "summaryKey": "wizard.result.existingOk.summary",
+        "icon": "CheckCircle",
+        "color": "green",
+        "actions": [
+          { "label": "Verify your details online", "url": "https://electoralsearch.eci.gov.in", "primary": true },
+          { "label": "Download e-EPIC", "url": "https://voters.eci.gov.in/", "primary": false }
+        ],
+        "forms": [],
+        "documentGroups": [],
+        "helpline": "1950"
+      },
+      {
+        "id": "result_form8_transpose",
+        "type": "action",
+        "titleKey": "wizard.result.form8Transpose.title",
+        "summaryKey": "wizard.result.form8Transpose.summary",
+        "icon": "ArrowRight",
+        "color": "orange",
+        "actions": [
+          { "label": "Fill Form 8 Online", "url": "https://voters.eci.gov.in/", "primary": true },
+          { "label": "Contact your BLO", "url": "https://voters.eci.gov.in/", "primary": false }
+        ],
+        "forms": ["form8"],
+        "documentGroups": ["identity", "address", "photo"],
+        "helpline": "1950"
+      },
+      {
+        "id": "result_form6_new",
+        "type": "action",
+        "titleKey": "wizard.result.form6New.title",
+        "summaryKey": "wizard.result.form6New.summary",
+        "icon": "UserPlus",
+        "color": "blue",
+        "actions": [
+          { "label": "Register Online — Form 6", "url": "https://voters.eci.gov.in/", "primary": true },
+          { "label": "Contact your BLO", "url": "https://voters.eci.gov.in/", "primary": false }
+        ],
+        "forms": ["form6"],
+        "documentGroups": ["identity", "address", "age", "photo"],
+        "helpline": "1950"
+      },
+      {
+        "id": "result_form8_correction",
+        "type": "action",
+        "titleKey": "wizard.result.form8Correction.title",
+        "summaryKey": "wizard.result.form8Correction.summary",
+        "icon": "Edit",
+        "color": "purple",
+        "actions": [
+          { "label": "Fill Form 8 Online", "url": "https://voters.eci.gov.in/", "primary": true },
+          { "label": "Visit local ERO office", "url": "https://www.eci.gov.in", "primary": false }
+        ],
+        "forms": ["form8"],
+        "documentGroups": ["identity", "address", "photo"],
+        "helpline": "1950"
+      },
+      {
+        "id": "result_nri",
+        "type": "action",
+        "titleKey": "wizard.result.nri.title",
+        "summaryKey": "wizard.result.nri.summary",
+        "icon": "Globe",
+        "color": "teal",
+        "actions": [
+          { "label": "Register as Overseas Voter — Form 6A", "url": "https://voters.eci.gov.in/", "primary": true },
+          { "label": "NRI Voter Guide on ECI", "url": "https://www.eci.gov.in", "primary": false }
+        ],
+        "forms": ["form6a"],
+        "documentGroups": ["identity", "photo"],
+        "helpline": "1950"
+      }
+    ]
+  },
+
+  "decisionTree": {
+    "root": {
+      "id": "start",
+      "question": "Are you already registered as a voter?",
+      "icon": "User",
+      "yes": {
+        "id": "registered_check",
+        "question": "Is your name found in the voter list?",
+        "icon": "Search",
+        "checkUrl": "https://electoralsearch.eci.gov.in",
+        "yes": {
+          "id": "address_check",
+          "question": "Are you living at the same address?",
+          "icon": "Home",
+          "yes": {
+            "id": "outcome_allgood",
+            "outcome": true,
+            "type": "success",
+            "result": "result_existing_ok"
+          },
+          "no": {
+            "id": "moved_type",
+            "question": "Did you move within the same constituency?",
+            "icon": "Map",
+            "yes": { "id": "outcome_form8_t", "outcome": true, "type": "action", "result": "result_form8_transpose" },
+            "no": { "id": "outcome_form6", "outcome": true, "type": "action", "result": "result_form6_new" }
+          }
+        },
+        "no": {
+          "id": "details_check",
+          "question": "Are your details (name, DOB) correct in the old record?",
+          "icon": "Edit",
+          "yes": { "id": "outcome_form6_re", "outcome": true, "type": "action", "result": "result_form6_new" },
+          "no": { "id": "outcome_form8_c", "outcome": true, "type": "action", "result": "result_form8_correction" }
+        }
+      },
+      "no": {
+        "id": "citizenship_check",
+        "question": "Are you an Indian citizen living in India?",
+        "icon": "Flag",
+        "yes": { "id": "outcome_form6_new", "outcome": true, "type": "action", "result": "result_form6_new" },
+        "no": { "id": "outcome_nri", "outcome": true, "type": "action", "result": "result_nri" }
+      }
+    }
+  },
+
+  "processTimeline": [
+    {
+      "id": "tl1",
+      "phase": "Announcement",
+      "icon": "Megaphone",
+      "color": "blue",
+      "description": "ECI announces the SIR schedule for a state/UT",
+      "citizenAction": "Watch for official announcements in your state",
+      "source": "https://www.eci.gov.in"
+    },
+    {
+      "id": "tl2",
+      "phase": "BLO Survey",
+      "icon": "MapPin",
+      "color": "green",
+      "description": "Booth Level Officers visit households for door-to-door verification",
+      "citizenAction": "Be available at home, keep documents ready",
+      "source": "https://www.eci.gov.in"
+    },
+    {
+      "id": "tl3",
+      "phase": "Form Submission",
+      "icon": "FileText",
+      "color": "purple",
+      "description": "Citizens submit forms for new registration, corrections, or deletions",
+      "citizenAction": "Submit Form 6 (new), Form 8 (correction), Form 7 (deletion/objection)",
+      "source": "https://voters.eci.gov.in/"
+    },
+    {
+      "id": "tl4",
+      "phase": "Draft Roll Published",
+      "icon": "BookOpen",
+      "color": "orange",
+      "description": "Draft electoral rolls are published for public inspection",
+      "citizenAction": "Check the draft roll, raise objections if needed using Form 7",
+      "source": "https://www.eci.gov.in"
+    },
+    {
+      "id": "tl5",
+      "phase": "Claims & Objections",
+      "icon": "MessageSquare",
+      "color": "red",
+      "description": "Period for filing claims and objections on the draft roll",
+      "citizenAction": "File Form 6 / Form 7 / Form 8 within the claims period",
+      "source": "https://voters.eci.gov.in/"
+    },
+    {
+      "id": "tl6",
+      "phase": "Final Roll Published",
+      "icon": "CheckCircle",
+      "color": "emerald",
+      "description": "Final electoral roll is published after processing all claims",
+      "citizenAction": "Verify your name is in the final roll",
+      "source": "https://electoralsearch.eci.gov.in"
+    }
+  ]
+}
