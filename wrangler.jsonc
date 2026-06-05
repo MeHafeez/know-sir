@@ -1,6 +1,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "sir-verification-portal",
+  "pages_build_output_dir": ".open-next",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-06-06",
   "compatibility_flags": [

@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "build:cf": "opennextjs-cloudflare build",
+    "pages:build": "node scripts/cf-pages-build.mjs",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
