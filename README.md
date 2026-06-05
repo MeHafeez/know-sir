@@ -61,28 +61,38 @@ Edit `src/messages/en.json` (or any language file) to update UI text.
 
 ## Deployment
 
-### Cloudflare Pages (recommended)
+### Cloudflare Workers (recommended)
 
 This project uses the [OpenNext Cloudflare adapter](https://opennext.js.org/cloudflare) for full Next.js support (API routes, middleware, SSR).
 
-**1. Connect your GitHub repo** in the [Cloudflare dashboard](https://dash.cloudflare.com/) → Workers & Pages → Create → Pages → Connect to Git.
+> **Important:** Deploy as a **Cloudflare Worker** (Workers Builds), **not** classic Cloudflare Pages.
+> Pages only uploads static files and will fail on `.next` cache files. OpenNext deploys a Worker via a separate deploy step.
 
-**2. Set build settings:**
+**1. Create a Worker with Git** in the [Cloudflare dashboard](https://dash.cloudflare.com/) → Workers & Pages → **Create** → **Worker** → **Import a repository**.
+
+**2. Set build settings** (Settings → Build):
 
 | Setting | Value |
 |---|---|
-| Framework preset | None |
 | Build command | `npx opennextjs-cloudflare build` |
-| Build output directory | *(leave empty)* |
+| Deploy command | `npx opennextjs-cloudflare deploy` |
+| Non-production deploy command | `npx opennextjs-cloudflare upload` *(optional)* |
 
-**3. Add environment variables** in Cloudflare → Settings → Environment variables:
+Do **not** set a build output directory — the deploy command handles everything.
+
+**3. Add runtime secrets** in Settings → **Variables & Secrets**:
 
 | Variable | Required | Notes |
 |---|---|---|
-| `GROQ_API_KEY` | Yes (for AI features) | Your Groq API key |
-| `NODE_VERSION` | Recommended | `22` |
+| `GROQ_API_KEY` | Yes (for AI features) | Your Groq API key — mark as **Secret** |
 
-**4. Deploy** — Cloudflare builds and deploys automatically on every push to `main`.
+**4. Add build variables** (Settings → Build → Build variables):
+
+| Variable | Value |
+|---|---|
+| `NODE_VERSION` | `22` |
+
+**5. Deploy** — push to `main` and Cloudflare will build + deploy automatically.
 
 **Local preview** (runs in the Cloudflare Workers runtime):
 
@@ -95,6 +105,8 @@ npm run preview
 ```bash
 npm run deploy
 ```
+
+If you already created a **Pages** project, delete it and recreate as a **Worker** with the settings above.
 
 ### Other platforms
 
