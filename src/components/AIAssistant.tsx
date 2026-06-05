@@ -74,17 +74,19 @@ export default function AIAssistant() {
   };
 
   const handleVoiceInput = () => {
-    if ("webkitSpeechRecognition" in window || "SpeechRecognition" in window) {
-      const SpeechRecognitionAPI = (window as Window & { webkitSpeechRecognition?: new () => SpeechRecognition; SpeechRecognition?: new () => SpeechRecognition }).webkitSpeechRecognition || (window as Window & { SpeechRecognition?: new () => SpeechRecognition }).SpeechRecognition;
-      if (!SpeechRecognitionAPI) return;
-      const recognition = new SpeechRecognitionAPI();
-      recognition.lang = "en-IN";
-      recognition.onresult = (event: SpeechRecognitionEvent) => {
-        const transcript = event.results[0][0].transcript;
-        setInput(transcript);
-      };
-      recognition.start();
-    }
+    if (typeof window === "undefined") return;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const w = window as any;
+    const SR = w.SpeechRecognition || w.webkitSpeechRecognition;
+    if (!SR) return;
+    const recognition = new SR();
+    recognition.lang = "en-IN";
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    recognition.onresult = (event: any) => {
+      const transcript = event.results[0][0].transcript;
+      setInput(transcript);
+    };
+    recognition.start();
   };
 
   return (

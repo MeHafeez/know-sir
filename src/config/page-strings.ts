@@ -83,7 +83,7 @@ function collectQuestions(node: TreeNode, acc: Record<string, string> = {}): Rec
   return acc;
 }
 
-function addValues(set: Set<string>, ...values: (string | undefined)[]) {
+function addValues(set: Set<string>, ...values: (string | null | undefined)[]) {
   for (const v of values) {
     if (typeof v === "string" && v.trim()) set.add(v);
   }

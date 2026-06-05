@@ -61,6 +61,43 @@ Edit `src/messages/en.json` (or any language file) to update UI text.
 
 ## Deployment
 
+### Cloudflare Pages (recommended)
+
+This project uses the [OpenNext Cloudflare adapter](https://opennext.js.org/cloudflare) for full Next.js support (API routes, middleware, SSR).
+
+**1. Connect your GitHub repo** in the [Cloudflare dashboard](https://dash.cloudflare.com/) → Workers & Pages → Create → Pages → Connect to Git.
+
+**2. Set build settings:**
+
+| Setting | Value |
+|---|---|
+| Framework preset | None |
+| Build command | `npx opennextjs-cloudflare build` |
+| Build output directory | *(leave empty)* |
+
+**3. Add environment variables** in Cloudflare → Settings → Environment variables:
+
+| Variable | Required | Notes |
+|---|---|---|
+| `GROQ_API_KEY` | Yes (for AI features) | Your Groq API key |
+| `NODE_VERSION` | Recommended | `22` |
+
+**4. Deploy** — Cloudflare builds and deploys automatically on every push to `main`.
+
+**Local preview** (runs in the Cloudflare Workers runtime):
+
+```bash
+npm run preview
+```
+
+**Manual deploy** from your machine:
+
+```bash
+npm run deploy
+```
+
+### Other platforms
+
 ```bash
 npm run build
 npm run start
