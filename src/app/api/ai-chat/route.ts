@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import knowledgeBase from "@/config/sir-knowledge-base.json";
 
 const GROK_API_URL = "https://api.groq.com/openai/v1/chat/completions";
-const GROK_MODEL = "llama3-8b-8192";
+const GROK_MODEL = "llama-3.1-8b-instant";
 
 type KBDocument = {
   id: string;
@@ -131,7 +131,7 @@ RESPONSE FORMAT:
     if (!response.ok) {
       const err = await response.text();
       console.error("Grok API error:", err);
-      throw new Error(`Grok API responded with status ${response.status}`);
+      throw new Error(`Grok API responded with status ${response.status}: ${err}`);
     }
 
     const data = await response.json();
