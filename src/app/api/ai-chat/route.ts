@@ -155,7 +155,7 @@ RESPONSE FORMAT:
     console.error("AI chat error:", error);
     return NextResponse.json(
       {
-        answer: "There was an error processing your request. Please call Voter Helpline 1950 or visit voters.eci.gov.in for assistance.",
+        answer: error instanceof Error ? error.message : "An unexpected error occurred",
         citations: [],
         confidence: 0,
         fallback: true,
